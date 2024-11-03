@@ -1,0 +1,37 @@
+[
+  {
+    "category_id": 1,
+    "category": "All Product",
+    "description": "A range of portable computers suitable for work, entertainment, and gaming."
+  },
+  {
+    "category_id": 2,
+    "category": "Phones",
+    "description": "Smartphones equipped with high-end features and powerful performance."
+  },
+  {
+    "category_id": 3,
+    "category": "Accessories",
+    "description": "Various accessories including chargers, cases, and audio devices to complement your gadgets."
+  },
+  {
+    "category_id": 4,
+    "category": "MacBook",
+    "description": "Apple's lineup of MacBook laptops, known for sleek design and high performance."
+  },
+  {
+    "category_id": 5,
+    "category": "iPhone",
+    "description": "Apple's flagship smartphones with premium features and build quality."
+  },
+  {
+    "category_id": 6,
+    "category": "Laptops",
+    "description": "A range of portable computers suitable for work, entertainment, and gaming."
+  },
+  {
+    "category_id": 7,
+    "category": "Smarts Watch",
+    "description": "A range of portable computers suitable for work, entertainment, and gaming."
+  }
+]

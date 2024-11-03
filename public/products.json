@@ -1,0 +1,214 @@
+[
+  {
+    "product_id": 201,
+    "product_title": "Laptop Pro 13",
+    "product_image": "https://i.ibb.co.com/F4dzXTt/Laptop-Pro-13.jpg",
+    "category": "Laptops",
+    "price": 999.99,
+    "description": "Compact and powerful laptop ideal for professionals.",
+    "specifications": ["Intel Core i5", "8GB RAM", "256GB SSD"],
+    "availability": "In Stock",
+    "rating": 4.5
+  },
+  {
+    "product_id": 202,
+    "product_title": "Laptop X Ultra",
+    "product_image": "https://i.ibb.co.com/nLmm2RD/Laptop-X-Ultra.jpg",
+    "category": "Laptops",
+    "price": 1299.99,
+    "description": "High-performance laptop with excellent graphics.",
+    "specifications": ["Intel Core i7", "16GB RAM", "NVIDIA GTX 1650"],
+    "availability": "In Stock",
+    "rating": 4.7
+  },
+  {
+    "product_id": 203,
+    "product_title": "MacBook Air M1",
+    "product_image": "https://i.ibb.co.com/LzDsKdQ/Mac-Book-Air-M1.jpg",
+    "category": "MacBook",
+    "price": 999.99,
+    "description": "Apple's lightweight and efficient MacBook with M1 chip.",
+    "specifications": ["Apple M1", "8GB RAM", "Retina 13.3 inches"],
+    "availability": "In Stock",
+    "rating": 4.8
+  },
+  {
+    "product_id": 204,
+    "product_title": "MacBook Pro 14",
+    "product_image": "https://i.ibb.co.com/vZyc3RC/Mac-Book-Pro-14.webp",
+    "category": "MacBook",
+    "price": 1999.99,
+    "description": "Powerful MacBook Pro for creative professionals.",
+    "specifications": ["Apple M1 Pro", "16GB RAM", "17 hours battery life"],
+    "availability": "In Stock",
+    "rating": 4.9
+  },
+  {
+    "product_id": 205,
+    "product_title": "iPhone 13",
+    "product_image": "https://i.ibb.co.com/KVx1Qnf/i-Phone-13.jpg",
+    "category": "iPhone",
+    "price": 799.99,
+    "description": "Apple's latest iPhone with advanced camera capabilities.",
+    "specifications": [
+      "6.1 inches screen",
+      "128GB storage",
+      "3240 mAh battery"
+    ],
+    "availability": "In Stock",
+    "rating": 4.6
+  },
+  {
+    "product_id": 206,
+    "product_title": "iPhone 12 Pro",
+    "product_image": "https://i.ibb.co.com/BzVsVz0/i-Phone-12-Pro.jpg",
+    "category": "iPhone",
+    "price": 999.99,
+    "description": "High-end iPhone model with exceptional performance.",
+    "specifications": [
+      "6.1 inches screen",
+      "256GB storage",
+      "12 MP triple camera"
+    ],
+    "availability": "In Stock",
+    "rating": 4.7
+  },
+  {
+    "product_id": 207,
+    "product_title": "Wireless Earbuds Z",
+    "product_image": "https://i.ibb.co.com/s5h4jPM/Wireless-Earbuds-Z.jpg",
+    "category": "Accessories",
+    "price": 59.99,
+    "description": "Compact and high-quality wireless earbuds.",
+    "specifications": [
+      "6 hours battery life",
+      "Bluetooth 5.0",
+      "IPX5 water resistance"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": 208,
+    "product_title": "Phone Case Pro",
+    "product_image": "https://i.ibb.co.com/1JZfK8V/Phone-Case-Pro.png",
+    "category": "Accessories",
+    "price": 29.99,
+    "description": "Durable case for all iPhone models.",
+    "specifications": [
+      "Silicone material",
+      "iPhone compatibility",
+      "Black color"
+    ],
+    "availability": "In Stock",
+    "rating": 4.2
+  },
+  {
+    "product_id": 209,
+    "product_title": "samsung galaxy s23 ultra",
+    "product_image": "https://i.ibb.co.com/TgSsB5r/samsung-galaxy-s23-ultra.jpg",
+    "category": "Phones",
+    "price": 699.99,
+    "description": "High-speed smartphone with powerful processor.",
+    "specifications": [
+      "Octa-core processor",
+      "128GB storage",
+      "5000 mAh battery"
+    ],
+    "availability": "In Stock",
+    "rating": 4.5
+  },
+  {
+    "product_id": 210,
+    "product_title": "Smartphone Lite",
+    "product_image": "https://i.ibb.co.com/02nr3jN/Smartphone-Lite.jpg",
+    "category": "Phones",
+    "price": 399.99,
+    "description": "Affordable smartphone with great performance.",
+    "specifications": [
+      "Quad-core processor",
+      "64GB storage",
+      "4000 mAh battery"
+    ],
+    "availability": "In Stock",
+    "rating": 4.0
+  },
+  {
+    "product_id": 211,
+    "product_title": "Laptop Lite",
+    "product_image": "https://i.ibb.co.com/WH1bhb6/Laptop-Lite.jpg",
+    "category": "Laptops",
+    "price": 749.99,
+    "description": "Lightweight laptop perfect for students.",
+    "specifications": ["Intel Core i3", "8GB RAM", "10 hours battery life"],
+    "availability": "In Stock",
+    "rating": 4.3
+  },
+  {
+    "product_id": 212,
+    "product_title": "MacBook Pro 16",
+    "product_image": "https://i.ibb.co.com/M7Vn6qX/Mac-Book-Pro-16.jpg",
+    "category": "MacBook",
+    "price": 2499.99,
+    "description": "Powerful MacBook Pro with M1 Max chip.",
+    "specifications": ["Apple M1 Max", "32GB RAM", "Retina 16 inches display"],
+    "availability": "out of stock",
+    "rating": 4.9
+  },
+  {
+    "product_id": 213,
+    "product_title": "Phone Charger Fast",
+    "product_image": "https://i.ibb.co.com/wrNbWHf/Phone-Charger-Fast.jpg",
+    "category": "Accessories",
+    "price": 19.99,
+    "description": "Fast-charging adapter for phones and tablets.",
+    "specifications": ["18W power output", "USB-C port", "White color"],
+    "availability": "In Stock",
+    "rating": 4.1
+  },
+  {
+    "product_id": 214,
+    "product_title": "iPhone 14 Pro Max",
+    "product_image": "https://i.ibb.co.com/B4VJTs9/i-Phone-14-Pro-Max.jpg",
+    "category": "iPhone",
+    "price": 1099.99,
+    "description": "Top-of-the-line iPhone with the best features available.",
+    "specifications": [
+      "6.7 inches screen",
+      "256GB storage",
+      "A15 Bionic processor"
+    ],
+    "availability": "In Stock",
+    "rating": 4.9
+  },
+  {
+    "product_id": 215,
+    "product_title": "Wireless Charger Q",
+    "product_image": "https://i.ibb.co.com/TKP5bHJ/Wireless-Charger-Q.webp",
+    "category": "Accessories",
+    "price": 49.99,
+    "description": "Wireless charger compatible with all Qi-enabled devices.",
+    "specifications": [
+      "10W charging speed",
+      "Qi-enabled compatibility",
+      "Black color"
+    ],
+    "availability": "In Stock",
+    "rating": 4.3
+  },
+  {
+    "product_id": 216,
+    "product_title": "Smartphone S Pro",
+    "product_image": "https://i.ibb.co.com/4YQ2jVv/Smartphone-S-Pro.jpg",
+    "category": "Phones",
+    "price": 599.99,
+    "description": "5G-enabled smartphone with excellent camera quality.",
+    "specifications": [
+      "6.4 inches screen",
+      "128GB storage",
+      "4500 mAh battery"
+    ],
+    "availability": "out of stock",
+    "rating": 4.6
+  }
+]
