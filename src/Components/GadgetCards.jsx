@@ -26,8 +26,8 @@ const GadgetCards = () => {
       <h2 className="text-4xl font-bold mb-12 text-center">
         Explore Cutting-Edge Gadgets
       </h2>
-      <div className="  md:flex gap-6">
-        <div className=" w-1/6 bg-slate-200 h-[465px] rounded-3xl">
+      <div className="flex flex-col  md:flex-row gap-6">
+        <div className=" w-1/6 shadow-xl  border h-[465px] rounded-3xl">
           {categoryData.map((category, idx) => (
             <button
               onClick={() => handleCategory(category.category)}

@@ -93,7 +93,7 @@
     "product_title": "Phone Case Pro",
     "product_image": "https://i.ibb.co.com/1JZfK8V/Phone-Case-Pro.png",
     "category": "Accessories",
-    "price": 29.99,
+    "price": 65.99,
     "description": "Durable case for all iPhone models.",
     "specifications": [
       "Silicone material",
@@ -160,7 +160,7 @@
     "product_title": "Phone Charger Fast",
     "product_image": "https://i.ibb.co.com/wrNbWHf/Phone-Charger-Fast.jpg",
     "category": "Accessories",
-    "price": 19.99,
+    "price": 79.99,
     "description": "Fast-charging adapter for phones and tablets.",
     "specifications": ["18W power output", "USB-C port", "White color"],
     "availability": "In Stock",
@@ -186,7 +186,7 @@
     "product_title": "Wireless Charger Q",
     "product_image": "https://i.ibb.co.com/TKP5bHJ/Wireless-Charger-Q.webp",
     "category": "Accessories",
-    "price": 49.99,
+    "price": 59.99,
     "description": "Wireless charger compatible with all Qi-enabled devices.",
     "specifications": [
       "10W charging speed",

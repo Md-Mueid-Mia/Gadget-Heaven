@@ -2,12 +2,13 @@ import { NavLink, useLocation } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import "./navbar.css";
+import { useState } from "react";
 
-const Navbar = () => {
+const Navbar = ({ count1, count2 }) => {
   const { pathname } = useLocation();
   return (
     <div
-      className={`just ${
+      className={` ${
         pathname === "/"
           ? "p-2 pb-0 border border-b backdrop-blur-xl rounded-t-xl bg-white/50 container mx-auto"
           : "container mx-auto"
@@ -107,11 +108,21 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end space-x-4">
-          <div className="p-2 rounded-full text-black cursor-pointer bg-slate-200">
+          <div className="p-2 rounded-full text-black cursor-pointer relative bg-slate-200">
             <IoCartOutline className="text-xl" />
+            {count1 ? (
+              <span class="badge absolute -top-3 -right-3">{count1}</span>
+            ) : (
+              ""
+            )}
           </div>
-          <div className="p-2 rounded-full text-black cursor-pointer bg-slate-200">
+          <div className="p-2 rounded-full text-black cursor-pointer relative bg-slate-200">
             <CiHeart className="text-xl" />
+            {count2 ? (
+              <span class="badge absolute -top-3 -right-3">{count2}</span>
+            ) : (
+              ""
+            )}
           </div>
         </div>
       </div>

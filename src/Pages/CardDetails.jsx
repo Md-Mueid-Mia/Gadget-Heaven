@@ -5,6 +5,7 @@ import { CiStar } from "react-icons/ci";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
 import { list } from "postcss";
+import { addToCart } from "../Components/utilitis";
 
 const CardDetails = () => {
   const { product_id } = useParams();
@@ -30,6 +31,9 @@ const CardDetails = () => {
     setProduct(product);
   }, []);
 
+  const handleToCart = (product) => {
+    addToCart(product);
+  };
   return (
     <div className="pb-[300px]">
       <div className="bg-purple-600 container mx-auto text-center text-white pb-56 relative">
@@ -43,7 +47,7 @@ const CardDetails = () => {
       <div className="p-8  bg-white rounded-3xl absolute md:w-[880px] top-56 left-[50%] translate-x-[-50%] border">
         <div className="rounded-3xl bg-white flex gap-5 ">
           <img
-            className="w-2/5 h-[400px] rounded-xl "
+            className="w-2/5 h-[450px] rounded-xl "
             src={product_image}
             alt=""
           />
@@ -71,8 +75,11 @@ const CardDetails = () => {
               <span className="badge ml-2 text-lg ">{rating}</span>
             </div>
             <div className="flex mt-5">
-              <button className="btn bg-purple-600 hover:bg-purple-700 rounded-full text-white text-lg font-bold">
-                Add To Card <MdOutlineShoppingCart />
+              <button
+                onClick={() => handleToCart(product)}
+                className="btn bg-purple-600 hover:bg-purple-700 rounded-full text-white text-lg font-bold"
+              >
+                Add To Cart <MdOutlineShoppingCart />
               </button>
               <button className="btn rounded-full ml-4">
                 <CiHeart className="text-xl" />
