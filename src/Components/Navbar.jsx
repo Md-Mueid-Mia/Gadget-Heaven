@@ -4,7 +4,7 @@ import { CiHeart } from "react-icons/ci";
 import "./navbar.css";
 import { useState } from "react";
 
-const Navbar = ({ count1, count2 }) => {
+const Navbar = ({ count, count2 }) => {
   const { pathname } = useLocation();
   return (
     <div
@@ -110,8 +110,8 @@ const Navbar = ({ count1, count2 }) => {
         <div className="navbar-end space-x-4">
           <div className="p-2 rounded-full text-black cursor-pointer relative bg-slate-200">
             <IoCartOutline className="text-xl" />
-            {count1 ? (
-              <span class="badge absolute -top-3 -right-3">{count1}</span>
+            {count ? (
+              <span class="badge absolute -top-3 -right-3">{count}</span>
             ) : (
               ""
             )}

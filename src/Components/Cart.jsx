@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import { GoSortAsc } from "react-icons/go";
 import { getAllProduct, removeFromCart } from "./utilitis";
 import CartDetails from "./CartDetails";
@@ -32,9 +31,13 @@ const Cart = () => {
           </button>
         </div>
       </div>
-      {/* {products.map((product, index) => (
-        <CartDetails key={index} product={product}></CartDetails>
-      ))} */}
+      {products.map((product, index) => (
+        <CartDetails
+          key={index}
+          product={product}
+          handleRemove={handleRemove}
+        ></CartDetails>
+      ))}
     </div>
   );
 };

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import {
   ComposedChart,
   Line,
@@ -95,6 +96,11 @@ const data = [
 const Statistics = () => {
   return (
     <div className="container mx-auto">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Gadget Heaven || Statistics</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <h2 className="text-2xl md:mx-56 my-5 font-bold">Statistics</h2>
       <ComposedChart
         className="container max-w-7xl mx-auto bg-slate-200"

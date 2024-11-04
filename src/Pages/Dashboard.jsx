@@ -2,14 +2,18 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import Wishlist from "../Components/Wishlist";
 import Cart from "../Components/Cart";
+import { Helmet } from "react-helmet";
 
 const Dashboard = () => {
   const [swipe, setSwipe] = useState("cart");
-  const handleCartAndWishlist = (name) => {
-    console.log(name);
-  };
+
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Gadget Heaven || Dashboard</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <div className="bg-purple-600 py-8 text-center text-white">
         <h1 className="text-xl md:text-3xl font-bold mb-4">Dashboard</h1>
         <p className="md:w-6/12 mx-auto">

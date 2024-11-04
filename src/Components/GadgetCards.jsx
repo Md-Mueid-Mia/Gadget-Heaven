@@ -1,9 +1,16 @@
 import { useLoaderData } from "react-router-dom";
-import categoryData from "../../public/category.json";
 import Card from "./Card";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import ErrorPage from "./ErrorPage";
 
 const GadgetCards = () => {
+  const [categoryData, setCategoryData] = useState([]);
+
+  useEffect(() => {
+    fetch("../category.json")
+      .then((response) => response.json())
+      .then((data) => setCategoryData(data));
+  }, []);
   const allData = useLoaderData();
   const [category, setCategory] = useState(allData);
   const handleCategory = (categoryName) => {
@@ -16,16 +23,18 @@ const GadgetCards = () => {
       );
       setCategory(filteredData);
     } else {
-      console.log("data not found");
-      setCategory(["data not found"]);
+      <ErrorPage />;
     }
   };
-
+  console.log(category, categoryData);
   return (
     <div className="container mx-auto px-36">
       <h2 className="text-4xl font-bold mb-12 text-center">
         Explore Cutting-Edge Gadgets
       </h2>
+      {categoryData.map((category, idx) =>
+        category.category != category.category ? <ErrorPage /> : ""
+      )}
       <div className="flex flex-col  md:flex-row gap-6">
         <div className=" w-1/6 shadow-xl  border h-[465px] rounded-3xl">
           {categoryData.map((category, idx) => (
@@ -41,9 +50,16 @@ const GadgetCards = () => {
         </div>
         <div className="w-5/6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {category.map((item, idx) => (
+            {/* {category.map((item, idx) => (
               <Card key={idx} item={item} />
-            ))}
+            ))} */}
+            {category.length > 0 ? (
+              category.map((item, idx) => <Card key={idx} item={item} />)
+            ) : (
+              <p className="text-center col-span-3 text-3xl font-bold text-red-500">
+                No data found
+              </p>
+            )}
           </div>
         </div>
       </div>

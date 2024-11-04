@@ -6,6 +6,7 @@ import CardDetails from "../Pages/CardDetails";
 import Dashboard from "../Pages/Dashboard";
 import Statistics from "../Pages/Statistics";
 import Cart from "../Components/Cart";
+import ErrorPage from "../Components/ErrorPage";
 
 const routes = createBrowserRouter([
   {
@@ -21,6 +22,7 @@ const routes = createBrowserRouter([
             path: "/category",
             element: <GadgetCards />,
             loader: () => fetch("../products.json"),
+            errorElement: <ErrorPage />,
           },
         ],
       },

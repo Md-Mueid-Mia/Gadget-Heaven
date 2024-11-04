@@ -1,5 +1,10 @@
+import { useState } from "react";
 import toast from "react-hot-toast";
 
+const incrementCounter = (price) => {
+  setCount(count + 1); // Increment count by 1
+  setTotalPrice(totalPrice + price); // Add price to total
+};
 // get all data from local storage
 const getAllProduct = () => {
   const data = localStorage.getItem("products");
@@ -32,4 +37,4 @@ const removeFromCart = (product_id) => {
   toast.success("Successfully Product removed");
 };
 
-export { addToCart, getAllProduct, removeFromCart };
+export { addToCart, getAllProduct, removeFromCart, incrementCounter };
