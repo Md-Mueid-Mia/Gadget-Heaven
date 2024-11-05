@@ -4,8 +4,7 @@ import { IoMdStar } from "react-icons/io";
 import { CiStar } from "react-icons/ci";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
-import { list } from "postcss";
-import { addToCart } from "../Components/utilitis";
+import { addToCart, addToWishlist } from "../Components/utilitis";
 
 const CardDetails = () => {
   const { product_id } = useParams();
@@ -24,6 +23,7 @@ const CardDetails = () => {
 
   const [spec1, spec2, spec3] =
     specifications.length >= 3 ? specifications : ["N/A", "N/A", "N/A"];
+
   useEffect(() => {
     const product = data.find(
       (item) => item.product_id === parseInt(product_id)
@@ -33,6 +33,9 @@ const CardDetails = () => {
 
   const handleToCart = (product) => {
     addToCart(product);
+  };
+  const handleWishlist = (product) => {
+    addToWishlist(product);
   };
   return (
     <div className="pb-[300px]">
@@ -47,7 +50,7 @@ const CardDetails = () => {
       <div className="p-8  bg-white rounded-3xl absolute md:w-[880px] top-56 left-[50%] translate-x-[-50%] border">
         <div className="rounded-3xl bg-white flex gap-5 ">
           <img
-            className="w-2/5 h-[450px] rounded-xl "
+            className="w-2/5 h-[350px] my-auto rounded-xl "
             src={product_image}
             alt=""
           />
@@ -81,7 +84,10 @@ const CardDetails = () => {
               >
                 Add To Cart <MdOutlineShoppingCart />
               </button>
-              <button className="btn rounded-full ml-4">
+              <button
+                onClick={() => handleWishlist(product)}
+                className="btn rounded-full ml-4"
+              >
                 <CiHeart className="text-xl" />
               </button>
             </div>

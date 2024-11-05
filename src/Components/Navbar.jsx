@@ -6,6 +6,7 @@ import { useState } from "react";
 
 const Navbar = ({ count, count2 }) => {
   const { pathname } = useLocation();
+
   return (
     <div
       className={` ${
@@ -108,14 +109,17 @@ const Navbar = ({ count, count2 }) => {
           </ul>
         </div>
         <div className="navbar-end space-x-4">
-          <div className="p-2 rounded-full text-black cursor-pointer relative bg-slate-200">
+          <NavLink
+            to={"/dashboard"}
+            className="p-2 rounded-full text-black cursor-pointer relative bg-slate-200"
+          >
             <IoCartOutline className="text-xl" />
             {count ? (
               <span class="badge absolute -top-3 -right-3">{count}</span>
             ) : (
               ""
             )}
-          </div>
+          </NavLink>
           <div className="p-2 rounded-full text-black cursor-pointer relative bg-slate-200">
             <CiHeart className="text-xl" />
             {count2 ? (

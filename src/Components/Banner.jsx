@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import GadgetCards from "./GadgetCards";
+
 const Banner = () => {
   return (
     <>
@@ -14,9 +17,9 @@ const Banner = () => {
               next level. From smart devices to the coolest accessories, we have
               it all!
             </p>
-            <button className="btn text- font-bold  text-purple-600">
+            <a href="#gadgets" className="btn text- font-bold  text-purple-600">
               Shop Now
-            </button>
+            </a>
           </div>
         </div>
       </div>

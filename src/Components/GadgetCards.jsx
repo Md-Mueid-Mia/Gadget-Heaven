@@ -26,15 +26,12 @@ const GadgetCards = () => {
       <ErrorPage />;
     }
   };
-  console.log(category, categoryData);
   return (
-    <div className="container mx-auto px-36">
+    <div id="gadgets" className="container mx-auto px-36">
       <h2 className="text-4xl font-bold mb-12 text-center">
         Explore Cutting-Edge Gadgets
       </h2>
-      {categoryData.map((category, idx) =>
-        category.category != category.category ? <ErrorPage /> : ""
-      )}
+
       <div className="flex flex-col  md:flex-row gap-6">
         <div className=" w-1/6 shadow-xl  border h-[465px] rounded-3xl">
           {categoryData.map((category, idx) => (

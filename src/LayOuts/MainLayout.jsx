@@ -6,7 +6,8 @@ import { useState } from "react";
 const MainLayout = () => {
   const [count1, setCount1] = useState(null);
   const [count2, setCount2] = useState(null);
-
+  const localData = localStorage.getItem("products");
+  const cart = JSON.parse(localData);
   // Function to increment the first counter
   const incrementCount1 = () => setCount1(count1 + 1);
   // Function to increment the second counter

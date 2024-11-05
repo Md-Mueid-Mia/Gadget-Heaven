@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
 import Wishlist from "../Components/Wishlist";
 import Cart from "../Components/Cart";
 import { Helmet } from "react-helmet";

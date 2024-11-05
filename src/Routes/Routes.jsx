@@ -12,6 +12,7 @@ const routes = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
@@ -22,7 +23,6 @@ const routes = createBrowserRouter([
             path: "/category",
             element: <GadgetCards />,
             loader: () => fetch("../products.json"),
-            errorElement: <ErrorPage />,
           },
         ],
       },
