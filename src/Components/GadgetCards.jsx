@@ -1,7 +1,6 @@
 import { useLoaderData } from "react-router-dom";
 import Card from "./Card";
 import { useEffect, useState } from "react";
-import ErrorPage from "./ErrorPage";
 
 const GadgetCards = () => {
   const [categoryData, setCategoryData] = useState([]);
@@ -23,7 +22,7 @@ const GadgetCards = () => {
       );
       setCategory(filteredData);
     } else {
-      <ErrorPage />;
+      setCategory([]);
     }
   };
   return (

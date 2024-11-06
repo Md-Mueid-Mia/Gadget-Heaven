@@ -13,15 +13,20 @@ const Cart = () => {
   const navigate = useNavigate();
 
   // add price in useState
-  const [price, setPrice] = useState(0);
+  const [totalPrice, setTotalPrice] = useState(0);
+
   useEffect(() => {
     const cart = getAllProduct();
     setProducts(cart);
+
+    const calculatedTotal = cart.reduce((accumulator, item) => {
+      return accumulator + item.price;
+    }, 0);
+
+    // Set the total price state
+    setTotalPrice(calculatedTotal);
   }, []);
-  const addPrice = (prices) => {
-    console.log(prices);
-    setPrice(price + prices);
-  };
+
   const handleRemove = (product_id) => {
     removeFromCart(product_id);
     const cart = getAllProduct();
@@ -51,7 +56,7 @@ const Cart = () => {
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-xl font-bold">Cart</h2>
         <div className="flex item-center space-x-6">
-          <h3 className="text-2xl font-bold">Total cost: $ {price}</h3>
+          <h3 className="text-2xl font-bold">Total cost: $ {totalPrice}</h3>
           <button
             onClick={handleSortData}
             className="text-lg font-medium btn btn-outline hover:bg-purple-600 hover:text-white text-purple-600"
@@ -87,7 +92,7 @@ const Cart = () => {
           <h3 className="font-bold text-2xl">Payment Successfully!</h3>
           <div className="divider"></div>
           <p className="py-4">Thanks for purchasing.</p>
-          <p>Total: $2545</p>
+          <p>Total: ${totalPrice}</p>
           <div className="modal-action">
             {/* Button to close the modal */}
             <button onClick={deleteAllData} className="btn w-full">

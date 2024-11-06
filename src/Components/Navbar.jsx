@@ -1,10 +1,10 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useOutletContext } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import "./navbar.css";
 import { useState } from "react";
 
-const Navbar = ({ count, count2 }) => {
+const Navbar = () => {
   const { pathname } = useLocation();
 
   return (
@@ -114,19 +114,19 @@ const Navbar = ({ count, count2 }) => {
             className="p-2 rounded-full text-black cursor-pointer relative bg-slate-200"
           >
             <IoCartOutline className="text-xl" />
-            {count ? (
-              <span class="badge absolute -top-3 -right-3">{count}</span>
+            {/* {count1 ? (
+              <span class="badge absolute -top-3 -right-3">{count1}</span>
             ) : (
               ""
-            )}
+            )} */}
           </NavLink>
           <div className="p-2 rounded-full text-black cursor-pointer relative bg-slate-200">
             <CiHeart className="text-xl" />
-            {count2 ? (
+            {/* {count2 ? (
               <span class="badge absolute -top-3 -right-3">{count2}</span>
             ) : (
               ""
-            )}
+            )} */}
           </div>
         </div>
       </div>

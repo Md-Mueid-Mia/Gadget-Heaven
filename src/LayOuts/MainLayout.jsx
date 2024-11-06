@@ -4,25 +4,37 @@ import Navbar from "../Components/Navbar";
 import { useState } from "react";
 
 const MainLayout = () => {
-  const [count1, setCount1] = useState(null);
-  const [count2, setCount2] = useState(null);
-  const localData = localStorage.getItem("products");
-  const cart = JSON.parse(localData);
-  // Function to increment the first counter
-  const incrementCount1 = () => setCount1(count1 + 1);
-  // Function to increment the second counter
-  const incrementCount2 = () => setCount2(count2 + 1);
+  const [count1, setCount1] = useState(null); // Initialize with 0 instead of null
+  const [count2, setCount2] = useState(null); // Initialize with 0 instead of null
+  const [price1, setPrice1] = useState(0);
+  const [price2, setPrice2] = useState(0);
+
+  const incrementCount1 = () => {
+    setCount1(count1 + 1);
+    setPrice1((count1 + 1) * itemPrice1); // Update price based on new count
+  };
+
+  // Function to increment the second counter and update price2
+  const incrementCount2 = () => {
+    setCount2(count2 + 1);
+    setPrice2((count2 + 1) * itemPrice2); // Update price based on new count
+  };
+
   return (
     <>
       {/* Navbar */}
-      <Navbar count1={count1} count2={count2} />
+      <Navbar count1={count1} count2={count2} price1={price1} price2={price2} />
       {/* Main Content */}
       <section className="min-h-[calc(100vh-480px)]">
         <Outlet
-          count1={count1}
-          count2={count2}
-          incrementCount1={incrementCount1}
-          incrementCount2={incrementCount2}
+          context={{
+            count1,
+            count2,
+            price1,
+            price2,
+            incrementCount1,
+            incrementCount2,
+          }}
         />
       </section>
       {/* Footer */}

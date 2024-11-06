@@ -11,7 +11,7 @@ const CartDetails = ({ product, handleRemove }) => {
       </div>
       <div>
         <h3 className="text-2xl font-semibold">{product_title}</h3>
-        <p className="text-lg my-4">{description}</p>
+        <p className="text-lg my-3">{description}</p>
         <p className="text-xl font-semibold">Price: $ {price}</p>
       </div>
       <div
