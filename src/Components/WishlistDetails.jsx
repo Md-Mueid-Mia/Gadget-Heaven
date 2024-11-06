@@ -17,11 +17,11 @@ const WishlistDetails = ({ product, handleRemove }) => {
       </div>
       <div>
         <h3 className="text-2xl font-semibold">{product_title}</h3>
-        <p className="text-lg my-4">{description}</p>
+        <p className="text-lg my-2">{description}</p>
         <p className="text-xl font-semibold">Price: $ {price}</p>
         <button
           onClick={() => handleToCart(product)}
-          className="btn bg-purple-600 hover:bg-purple-700 rounded-full text-white text-lg font-bold"
+          className="btn mt-3 bg-purple-600 hover:bg-purple-700 rounded-full text-white text-lg font-bold"
         >
           Add To Cart <MdOutlineShoppingCart />
         </button>

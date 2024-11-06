@@ -26,13 +26,13 @@ const GadgetCards = () => {
     }
   };
   return (
-    <div id="gadgets" className="container mx-auto px-36">
+    <div id="gadgets" className="container mx-auto px-6 md:px-36">
       <h2 className="text-4xl font-bold mb-12 text-center">
         Explore Cutting-Edge Gadgets
       </h2>
 
-      <div className="flex flex-col  md:flex-row gap-6">
-        <div className=" w-1/6 shadow-xl  border h-[465px] rounded-3xl">
+      <div className="md:flex flex-col  md:flex-row gap-6">
+        <div className="w-full md:w-1/6 shadow-xl mb-6  border h-[465px] rounded-3xl">
           {categoryData.map((category, idx) => (
             <button
               onClick={() => handleCategory(category.category)}
@@ -44,7 +44,7 @@ const GadgetCards = () => {
           ))}
           {/* data not found */}
         </div>
-        <div className="w-5/6">
+        <div className="md:w-5/6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {/* {category.map((item, idx) => (
               <Card key={idx} item={item} />

@@ -101,10 +101,11 @@ const Statistics = () => {
         <title>Gadget Heaven || Statistics</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-      <h2 className="text-2xl md:mx-56 my-5 font-bold">Statistics</h2>
+      <h2 className="text-2xl md:mx-56 my-5 mx-6 font-bold">Statistics</h2>
       <ComposedChart
-        className="container max-w-7xl mx-auto bg-slate-200"
-        width={900}
+        className="container w-5/6 mx-auto p-6 bg-slate-200"
+        // width={350}
+        width={800}
         height={400}
         data={data}
         margin={{

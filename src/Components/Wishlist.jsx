@@ -14,7 +14,7 @@ const Wishlist = () => {
     setProducts(cart);
   };
   return (
-    <div className="container md:px-32 mt-6 mx-auto">
+    <div className="container md:px-32 px-6 mt-6 mx-auto">
       {/*  */}
       <h2 className="text-xl font-bold">Wishlist</h2>
       <div>

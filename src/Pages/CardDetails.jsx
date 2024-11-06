@@ -38,8 +38,8 @@ const CardDetails = () => {
     addToWishlist(product);
   };
   return (
-    <div className="pb-[300px]">
-      <div className="bg-purple-600 container mx-auto text-center text-white pb-56 relative">
+    <div className="pb-[620px] md:pb-[300px]">
+      <div className="bg-purple-600 container mx-auto text-center text-white px-4 pb-56 relative">
         <h2 className="text-xl md:text-3xl font-bold pt-6">Product Details</h2>
         <p className="md:w-[796px] mx-auto mt-4">
           Explore the latest gadgets that will take your experience to the next
@@ -47,10 +47,10 @@ const CardDetails = () => {
         </p>
       </div>
       {/*  */}
-      <div className="p-8  bg-white rounded-3xl absolute md:w-[880px] top-56 left-[50%] translate-x-[-50%] border">
-        <div className="rounded-3xl bg-white flex gap-5 ">
+      <div className="p-8  bg-white rounded-3xl absolute w-[320px] md:w-[880px] top-56 left-[50%] translate-x-[-50%] border">
+        <div className="rounded-3xl bg-white md:flex gap-5 ">
           <img
-            className="w-2/5 h-[350px] my-auto rounded-xl "
+            className="md:w-2/5 h-[350px] mb-4 my-auto rounded-xl "
             src={product_image}
             alt=""
           />

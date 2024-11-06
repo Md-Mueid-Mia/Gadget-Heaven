@@ -15,7 +15,7 @@ const Dashboard = () => {
       </Helmet>
       <div className="bg-purple-600 py-8 text-center text-white">
         <h1 className="text-xl md:text-3xl font-bold mb-4">Dashboard</h1>
-        <p className="md:w-6/12 mx-auto">
+        <p className="md:w-6/12 mx-auto px-4">
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>

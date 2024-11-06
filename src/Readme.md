@@ -10,7 +10,7 @@ Welcome to **[Gadget Heaven✨]**! This is a e-commerce website for gadgets. It 
 
 ### 📄 Requirement Document
 
-[Click here to view the requirement document](https://github.com/programming-hero-web-course2/b10a8-gadget-heaven-Md-Mueid-Mia)
+[Click here to view the requirement document](https://github.com/ProgrammingHero1/B10-A8-gadget-heaven/blob/cb107cb186465d2189e83f743d16aa13a0cb206e/Batch-10_Assignment-08.pdf)
 
 ---
 
