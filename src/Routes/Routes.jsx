@@ -7,6 +7,7 @@ import Dashboard from "../Pages/Dashboard";
 import Statistics from "../Pages/Statistics";
 import Cart from "../Components/Cart";
 import ErrorPage from "../Components/ErrorPage";
+import Contact from "../Pages/Contact";
 
 const routes = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const routes = createBrowserRouter([
         path: "/statistics",
         element: <Statistics />,
         loader: () => fetch("../products.json"),
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },
