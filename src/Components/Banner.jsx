@@ -1,6 +1,3 @@
-import { Link } from "react-router-dom";
-import GadgetCards from "./GadgetCards";
-
 const Banner = () => {
   return (
     <>

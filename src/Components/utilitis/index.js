@@ -15,7 +15,6 @@ const getAllProduct = () => {
 // local storage add data
 const addToCart = (product) => {
   const cart = getAllProduct();
-  // const isExist = cart.map((item) => item.product_id == product.product_id);
 
   cart.push(product);
   localStorage.setItem("products", JSON.stringify(cart));
@@ -42,13 +41,14 @@ const getAllProductFromWishlist = () => {
 };
 const addToWishlist = (product) => {
   const cart = getAllProductFromWishlist();
+
   cart.push(product);
   localStorage.setItem("wishlist", JSON.stringify(cart));
   toast.success("Product added to Wishlist");
 };
 const removeFromWishlist = (product_id) => {
   const cart = getAllProduct();
-  const newCart = cart.filter((item) => item.product_id !== product_id);
+  const newCart = cart.filter((item) => item.product_id != product_id);
   localStorage.setItem("wishlist", JSON.stringify(newCart));
 };
 export {

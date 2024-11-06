@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Card = ({ item }) => {
   const { product_title, product_image, price, product_id } = item || {};

@@ -2,7 +2,6 @@ import { NavLink, useLocation, useOutletContext } from "react-router-dom";
 import { IoCartOutline } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";
 import "./navbar.css";
-import { useState } from "react";
 
 const Navbar = () => {
   const { pathname } = useLocation();

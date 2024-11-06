@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosCloseCircleOutline } from "react-icons/io";
-import { addToCart, removeFromWishlist } from "./utilitis";
+import { addToCart } from "./utilitis";
 import { MdOutlineShoppingCart } from "react-icons/md";
 
 const WishlistDetails = ({ product, handleRemove }) => {
